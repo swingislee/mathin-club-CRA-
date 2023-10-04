@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import HomePage from './features/Home/index.js';
+import Navbar from './shared/Navbar';
+import Footer from './shared/Footer';
+import StoryPage from './features/Story/StoryIndex';
+import GamesPage from './features/Games/GamesIndex';
+import TermsPage from './features/Terms/TermsIndex';
+import MindsPage from './features/Minds/MindsIndex';
+import ToolsPage from './features/Tools/ToolsIndex';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Navbar />
+            <AnimatePresence>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/story" element={<StoryPage />} />
+                    <Route path="/games" element={<GamesPage />} />
+                    <Route path="/terms" element={<TermsPage />} />
+                    <Route path="/minds" element={<MindsPage />} />
+                    <Route path="/tools" element={<ToolsPage />} />
+                </Routes>
+            </AnimatePresence>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;

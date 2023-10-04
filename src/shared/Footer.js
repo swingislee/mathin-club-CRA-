@@ -3,14 +3,17 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer>
-			<br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">æ©ICP±∏2020034692∫≈-2</a>
-			<br />
-			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502053253">
-				<img src="\public\images\FilingIcon.png" style="vertical-align:middle; margin-right:5px" />
-				æ©π´Õ¯∞≤±∏ 11010502053253∫≈
-			</a>        </footer>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" rel="noopener noreferrer">
+                ‰∫¨ICPÂ§á   2020034692Âè∑-2
+            </a>
+            <br />
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502053253" rel="noopener noreferrer">
+                <img src="/images/FilingIcon.png" alt="Â§áÊ°àÂõæÊ†á" style={{ verticalAlign: 'middle', marginRight: '5px' }} />
+                ‰∫¨ÂÖ¨ÁΩëÂÆâÂ§á 11010502053253Âè∑
+            </a>
+        </footer>
     );
 };
 

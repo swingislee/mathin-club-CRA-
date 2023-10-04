@@ -1,0 +1,20 @@
+/* styles/Navbar.css */
+.navbar {
+    font-style:italic;
+    position:relative;
+    background-color:aqua;
+}
+
+.title {
+    /* Some base styles */
+    position:absolute;
+    background-color:antiquewhite;
+}
+
+.main-menu {
+    position: absolute; /* Some base styles */
+}
+
+.set-menu {
+    position: absolute; /* Some base styles */
+}

@@ -11,3 +11,176 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/* styles/Navbar.css */
+.navbar {
+    font-style: italic;
+    position: relative;
+    
+}
+
+.title {
+    /* Some base styles */
+    position: absolute;
+    color:dimgray;
+}
+
+.main-menu {
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    color: dimgray;
+}
+
+.set-menu {
+    position: absolute; /* Some base styles */
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    color:darkgray;
+}
+
+    /* Remove the underline from the links */
+    .main-menu a,
+    .set-menu a,
+    .title a {
+        text-decoration: none;
+        color: inherit; /* Ensures the links use the color of their parent */
+    }
+
+        /* Change the color of the link when it's clicked (active) */
+        .main-menu a:active,
+        .set-menu a:active,
+        .title a:active {
+            color: lightgray;
+        }
+
+/* For title */
+@keyframes titleHome {
+    from {
+        font-size: 1rem;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+    }
+
+    to {
+        font-size: 4rem;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes titleNotHome {
+    from {
+        font-size: 4rem;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+    }
+
+    to {
+        font-size: 1rem;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+    }
+}
+
+/* For navbar */
+@keyframes navbarHome {
+    from {
+        height: 2rem;
+        background-color: lightyellow;
+    }
+
+    to {
+        height: 6rem;
+        background-color: transparent;
+    }
+}
+
+@keyframes navbarNotHome {
+    from {
+        height: 6rem;
+        background-color: transparent;
+    }
+
+    to {
+        height: 2rem;
+        background-color: lightyellow;
+    }
+}
+
+/* For set-menu */
+@keyframes setMenuHome {
+    from {
+        font-size: 1em;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+    }
+
+    to {
+        font-size: 1rem;
+        top: 0;
+        right: 1rem;
+    }
+}
+
+@keyframes setMenuNotHome {
+    from {
+        font-size: 1rem;
+        top: 0;
+        right: 1rem;
+    }
+
+    to {
+        font-size: 1em;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes mainMenuPositionHome {
+    from {
+        font-size: 1rem;
+        bottom: auto;
+        right: auto;
+        left: 4.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    to {
+        font-size: 2rem;
+        bottom: 0;
+        right: 1rem;
+        left: auto;
+        top: auto;
+    }
+}
+
+@keyframes mainMenuPositionNotHome {
+    from {
+        font-size: 2rem;
+        bottom: 0;
+        right: 1rem;
+        left: auto;
+        top: auto;
+    }
+
+    to {
+        font-size: 1rem;
+        bottom: auto;
+        right: auto;
+        left: 4.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
