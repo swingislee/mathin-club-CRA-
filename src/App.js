@@ -13,8 +13,10 @@ import ToolsPage from './features/Tools/ToolsIndex';
 function App() {
     return (
         <Router>
-            <Navbar />
-            <AnimatePresence>
+            <div className="app-container">
+                <div className="navbar-container"><Navbar /></div>            
+                <AnimatePresence>
+            <div className="main-container">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/story" element={<StoryPage />} />
@@ -22,9 +24,14 @@ function App() {
                     <Route path="/terms" element={<TermsPage />} />
                     <Route path="/minds" element={<MindsPage />} />
                     <Route path="/tools" element={<ToolsPage />} />
-                </Routes>
-            </AnimatePresence>
-            <Footer />
+                        </Routes>
+            </div>
+                </AnimatePresence>
+                <div className="footer-container">
+                    <Footer />
+                </div>
+            </div>
+            
         </Router>
     );
 }

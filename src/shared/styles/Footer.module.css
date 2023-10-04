@@ -1,0 +1,29 @@
+footer {
+    position:relative;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100%; /* 使 footer 占据全部可用高度 */
+    width: 100vw;
+}
+
+
+.footerLabels {
+    font-size: 0.5rem;
+    color: gray;
+    text-decoration: none;
+    text-align: center; /* 文字水平居中 */
+    display: flex; /* 使用 flexbox 使链接垂直居中 */
+    justify-content: center; /* 链接水平居中 */
+    align-items: center; /* 链接垂直居中 */
+    height: 100%; /* 使 .footerLabels 占据全部可用高度 */
+}
+
+    .footerLabels a {
+        color: gray;
+        text-decoration: none;
+    }
+
+        .footerLabels a:active {
+            color: lightgray;
+        }

@@ -2,12 +2,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import styles from './styles/HomeIndex.css'
 
 const HomePage = () => {
     return (
-        <div>
-            <img src="\images\MainBackground.png" alt="Main Image" />
-        </div>
+  
+            <img class="planeimage" src="\images\MainBackground.png" alt="planeimage" />
+        
+
     );
 };
 
