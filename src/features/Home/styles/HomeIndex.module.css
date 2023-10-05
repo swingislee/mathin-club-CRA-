@@ -1,7 +1,4 @@
-
-
-
-.planeimage {
+.planetimage {
     height: 100vh; /* Set the height to the viewport height */
     width: auto; /* Same value as height to keep it square */
     object-fit: cover; /* To ensure image covers the set dimensions */
@@ -14,7 +11,7 @@
 
 
 @media (orientation: portrait) {
-    .planeimage {
+    .planetimage {
         height: auto; /* Set the height to the viewport height */
         width: 100vw; /* Same value as height to keep it square */
         top: 50%;
