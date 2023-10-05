@@ -6,7 +6,7 @@ import styles from './styles/HomeIndex.module.css';
 const HomePage = () => {
     return (
   
-        <img className={styles.planetimage} src="/images/MainBackground.png" alt="planet image" />
+        <img className={styles.planetimage} src="/images/MainBackground.png" alt="planet" />
         
 
     );

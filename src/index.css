@@ -70,7 +70,18 @@ code {
 
 .set-menu.notHome {    font-size: 1em;    top: 50%;    right: 1rem;    transform: translateY(-50%);}
 
+.zh-navbar {
+    font-style: normal
+}
 
+.zh-title.home {
+    top:1.2rem; 
+}
+
+
+.zh-menu {
+    /* styles for Chinese menu */
+}
 
 
 /*portrait mode*/
@@ -83,8 +94,6 @@ code {
         z-index: 0;
         top: 3rem;
     }
-
-.navbar { position: relative;}
 
 .title, .main-menu, .set-menu {position: absolute;  color: dimgray;}
 
@@ -120,11 +129,6 @@ code {
 
 /* Mobile Landscape Mode */
 @media (orientation: landscape) and (max-height: 500px) {
-    body {
-        width:100vw;
-        height:100vh;
-    }
-.navbar { position: relative;}
 
 .title, .main-menu, .set-menu {position: absolute;  color: dimgray;}
 
